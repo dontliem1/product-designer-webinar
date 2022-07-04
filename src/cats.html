@@ -25,6 +25,7 @@
         }
         button {
             align-items: center;
+            background-color: Canvas;
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
@@ -50,6 +51,7 @@
             padding: .5em;
             transition: opacity .3s;
         }
+        button:focus::after,
         button:hover::after {
             opacity: 1;
         }
@@ -81,7 +83,7 @@
 <script>
     function handleClick(e) {
         alert('Спасибо! Ваш голос учтен.');
-        console.log(e.target.id);
+        ym(89410210,'reachGoal', e.target.id)
     }
 
     const btns = document.getElementsByTagName('button');
@@ -90,5 +92,17 @@
         btn.addEventListener('click', handleClick);
     }
 </script>
+<script>
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(89410210, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/89410210" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 </body>
 </html>

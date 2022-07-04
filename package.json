@@ -29,7 +29,6 @@
   "dependencies": {
     "@11ty/eleventy-fetch": "^3.0.0",
     "@shower/core": "^3.3.0",
-    "@shower/material": "^2.5.0",
     "@shower/ribbon": "^3.5.0"
   },
   "devDependencies": {
@@ -41,9 +40,9 @@
     "11ty-build": "npx @11ty/eleventy --input=src/ --output=bundled",
     "pdf": "shower pdf",
     "start": "shower serve",
-    "bundle": "shower bundle --files '**' --files '!{docs,node_modules,bundled}{,/**}' --files '!*.{md,toml,json}' && npm run 11ty-build",
-    "archive": "shower archive --files '**' --files '!{docs,node_modules,bundled}{,/**}' --files '!*.{md,toml,json}'",
-    "publish": "shower publish --files '**' --files '!{docs,node_modules,bundled}{,/**}' --files '!*.{md,toml,json}'",
+    "bundle": "shower bundle --files '**' --files '!{docs,node_modules,bundled,src}{,/**}' --files '!*.{md,toml,json}' && npm run 11ty-build",
+    "archive": "shower archive --files '**' --files '!{docs,node_modules,bundled,src}{,/**}' --files '!*.{md,toml,json}'",
+    "publish": "shower publish --files '**' --files '!{docs,node_modules,bundled,src}{,/**}' --files '!*.{md,toml,json}'",
     "test": "npm run bundle && ls bundled && npm run archive && path-exists presentation.zip"
   }
 }
