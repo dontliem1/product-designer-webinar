@@ -1,7 +1,7 @@
-# Shower Presentation Template
+# Code workshop for product designers
 [![Test status](https://github.com/shower/shower/workflows/Test/badge.svg)](https://github.com/shower/shower/actions/workflows/test.yml)
 
-<img src="pictures/logo.png" width="250" alt="Shower logo">
+Made with 11ty and Shower.
 
 > Shower ['ʃəuə] noun. A person or thing that shows.
 

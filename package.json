@@ -38,6 +38,7 @@
   },
   "scripts": {
     "11ty-build": "npx @11ty/eleventy --input=src/ --output=bundled",
+    "11ty-serve": "npx @11ty/eleventy --serve --input=src/ --output=bundled",
     "pdf": "shower pdf",
     "start": "shower serve",
     "bundle": "shower bundle --files '**' --files '!{docs,node_modules,bundled,src}{,/**}' --files '!*.{md,toml,json}' && npm run 11ty-build",
