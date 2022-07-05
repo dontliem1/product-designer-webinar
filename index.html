@@ -28,7 +28,7 @@
     <header class="caption">
         <h1>GitHub и Метрика</h1>
         <p>Воркшоп для продуктовых дизайнеров</p>
-        <p><a href="cats/">Доска почёта</a> • <a href="task/">Задание</a></p>
+        <p><a href="task/">Задание</a> • <a href="cats/">Котики</a></p>
     </header>
 
     <section class="slide" id="cover">
@@ -41,12 +41,7 @@
             <li>Q&A</li>
         </ol>
         <i>P.S. Котов считать не нужно</i>
-        <figure>
-            <img class="place right" src="pictures/cover.jpg" alt="Фотография Михаила Воробьева">
-            <figcaption class="copyright right">
-                <a href="https://dontliem1.github.io" target="_blank">Контакты</a>
-            </figcaption>
-        </figure>
+        <img class="place right" src="pictures/cover.jpg" alt="Фотография Михаила Воробьева">
         <style>
             #cover h2 {
                 font-size: 250%;
@@ -136,10 +131,20 @@
 
     <section class="slide" id="commit">
         <h2>Коммит</h2>
-        <p class="note">Commit — подписанная пачка изменений исходного кода</p>
+        <p class="note">Commit — коротко подписанная пачка изменений исходного кода</p>
         <p><code>git add ПАПКИ/ФАЙЛЫ</code> — добавить измененённые файлы в следующий коммит (застейджить). Застейджить всё: <code>git add --all</code></p>
         <p><code>git commit -m "СООБЩЕНИЕ"</code> — создать коммит (закоммитить)</p>
         <p><code>git revert КОММИТ</code> — отменить коммит (ревертнуть)</p>
+    </section>
+
+    <section class="slide" id="true-false">
+        <h2>💬 Правда или ложь</h2>
+        <p class="note">Ставьте в чат <code>+</code> если согласны с удтверждением или <code>–</code>, если нет</p>
+        <ol>
+            <li class="next">Хранилище исходного кода с историей изменений называют суппозиторием</li>
+            <li class="next">В сообщении коммита требуется подробно перечислить все изменения</li>
+            <li class="next">Коммиты можно отменять с помощью комманды <code>git revert</code></li>
+        </ol>
     </section>
 
     <section class="slide" id="ci-cd">
@@ -147,6 +152,37 @@
         <p><code>git push</code> — отправить коммиты (запушить)</p>
         <p><code>git pull</code> — подтянуть коммиты (спуллить)</p>
         <p><b>Continuous Integration/Continuous Delivery <a href="https://doka.guide/tools/ci-cd/" target="_blank">(CI/CD)</a></b> — подход к разработке, при котором задачи сборки, публикации, тестирования продукта полностью или частично автоматизированы.</p>
+    </section>
+
+    <section class="slide" id="definitions">
+        <h2>💬 Сопоставьте действия с командами</h2>
+        <p class="note">и напишите в чат в свободной форме, например <q>1a,2b,3c</q></p>
+        <div class="columns two">
+            <ol>
+                <li>Скопировать удаленный репозиторий к себе на компьютер</li>
+                <li>Скопировать чужие изменения в локальный репозиторий</li>
+                <li>Отправить свои изменения в удаленный репозиторий</li>
+            </ol>
+            <ol type="a">
+                <li><code>git pull</code></li>
+                <li><code>git push</code></li>
+                <li><code>git clone</code></li>
+            </ol>
+        </div>
+        <style>
+            #definitions ol[type="a"] {
+                list-style: lower-alpha;
+            }
+            #definitions ol[type="a"] li::before {
+                display: none;
+            }
+            #definitions ol[type="a"] li::marker {
+                color: var(--color-grey);
+            }
+            #definitions .two {
+                grid-template-columns: 2fr 1fr;
+            }
+        </style>
     </section>
 
     <section class="slide" id="branches">
@@ -193,8 +229,9 @@
         <a href="cats/?_ym_debug=1" target="_blank">Котики</a> • <a href="https://metrika.yandex.ru/dashboard?id=89410210" target="_blank">Счётчик котиков</a>
     </section>
 
-    <section class="slide">
+    <section class="slide" id="qa">
         <h2 class="shout shrink">Вопросы</h2>
+        <p class="place bottom"><a href="https://t.me/dontliem1" target="_blank">@dontliem1</a></p>
     </section>
 
     <footer class="badge">
@@ -204,7 +241,5 @@
     <div class="progress"></div>
 
     <script src="node_modules/@shower/core/dist/shower.js"></script>
-    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
-
 </body>
 </html>
