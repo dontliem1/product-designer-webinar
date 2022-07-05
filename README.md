@@ -1,5 +1,5 @@
 # Code workshop for product designers
-[![Test status](https://github.com/shower/shower/workflows/Test/badge.svg)](https://github.com/shower/shower/actions/workflows/test.yml)
+[Published version](https://pd-workshop.netlify.app)
 
 Made with 11ty and Shower.
 
