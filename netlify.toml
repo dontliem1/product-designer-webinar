@@ -1,3 +1,9 @@
 [build]
   publish = "bundled"
   command = "npm run bundle"
+
+[[plugins]]
+package = "netlify-plugin-cache"
+
+  [plugins.inputs]
+  paths = [ ".cache" ]
