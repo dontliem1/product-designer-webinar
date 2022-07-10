@@ -1,4 +1,4 @@
-# Code workshop for product designers
+# Воркшоп для продуктовых дизайнеров
 [Опубликованный сайт](https://pd-workshop.netlify.app)
 
 Сделано на [11ty](https://1ty.dev) и [Shower](https://shwr.me/).
