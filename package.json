@@ -29,7 +29,8 @@
   "dependencies": {
     "@11ty/eleventy-fetch": "^3.0.0",
     "@shower/core": "^3.3.0",
-    "@shower/ribbon": "^3.5.0"
+    "@shower/ribbon": "^3.5.0",
+    "netlify-plugin-cache": "^1.0.3"
   },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.1",

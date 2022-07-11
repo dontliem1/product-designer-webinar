@@ -13,6 +13,8 @@
         body {
             margin: 0;
             padding: 1em;
+            font-size: 150%;
+            line-height: 1.6;
         }
         a {
             color: inherit;
@@ -20,17 +22,28 @@
             margin-bottom: .5em;
         }
         code {
-            background-color: rgb(51, 122, 198);
+            border: 1px solid;
             color: #fff;
             display: inline-block;
-            padding: 0.25em;
-            border-radius: .25em;
+            padding: .25em .5em;
+            border-radius: 6px;
+            line-height: 1.2;
+        }
+        .code--green {
+            background-color: rgb(46, 160, 67);
+            border: none;
+        }
+        .code--orange {
+            border: none;
+            border-left: 3px solid #E88D74;
+            background-color: rgba(128,128,128,.2);
+            border-radius: 0;
         }
         img {
             vertical-align: top;
             max-width: 100%;
             height: auto;
-            margin: .5em;
+            margin: 0 .5em .5em 0;
         }
         figure {
             margin: 0;
@@ -44,6 +57,9 @@
         li {
             margin-bottom: 2em;
         }
+        li::marker {
+            font-size: 1.5em;
+        }
     </style>
 </head>
 <body>
@@ -54,39 +70,46 @@
 <ol>
     <li>
         <figure>
-            <figcaption>Перейдите в <a href="https://github.com/dontliem1/product-designer-webinar" target="_blank">репозиторий воркшопа</a></figcaption>
-            <img src="../pictures/task/repo.png" width="900" alt="">
+            <figcaption>Перейдите в <a href="https://github.com/dontliem1/product-designer-webinar" target="_blank">репозиторий воркшопа</a>, и нажмите кнопку <code>Fork</code> в правом верхнем углу.</figcaption>
+            <img src="../pictures/task/fork1.png" width="900" alt="">
         </figure>
     </li>
     <li>
         <figure>
-            <figcaption>Нажмите на точку <code>.</code> на клавиатуре, чтобы вызвать веб-версию VS Code, и дождитесь окончания загрузки</figcaption>
-            <img src="../pictures/task/webeditor.png" width="900" alt="">
+            <figcaption>В открывшемся окне нажмите <code class="code--green">Create fork</code>.</figcaption>
+            <img src="../pictures/task/fork2.png" width="900" alt="">
         </figure>
     </li>
     <li>
         <figure>
-            <figcaption>В левом нижнем углу нажмите на <code>main</code> и создайте новую ветку <code>Create new branch</code>, написав по-английски свою фамилию/ник и переключитесь на неё <code>Switch to branch</code></figcaption>
+            <figcaption>В своём репозитории нажмите на точку <code>.</code> на клавиатуре, чтобы вызвать веб-версию VS Code, и дождитесь окончания загрузки</figcaption>
+            <img src="../pictures/task/repo.png" width="600" alt="">
+            <img src="../pictures/task/webeditor.png" width="600" alt="">
+        </figure>
+    </li>
+    <li>
+        <figure>
+            <figcaption>В левом нижнем углу нажмите на <code>main</code> и создайте новую ветку <code style="background-color: #3B3F47;">Create new branch</code>, написав по-английски свою фамилию/ник и переключитесь на неё <code class="code--green">Switch to branch</code></figcaption>
             <img src="../pictures/task/branch1.png" width="300" alt="">
             <img src="../pictures/task/branch2.png" width="300" alt="">
             <img src="../pictures/task/branch3.png" width="600" alt="">
             <img src="../pictures/task/branch4.png" width="400" alt="">
         </figure>
         <figure>
-            <figcaption>Убедитесь, что в левом нижнем углу теперь отображается ваша ветка</figcaption>
+            <figcaption>Убедитесь, что в левом нижнем углу теперь отображается ваша ветка</figcaption>
             <img src="../pictures/task/branch5.png" width="300" alt="">
         </figure>
     </li>
     <li>
         <figure>
-            <figcaption>В дереве файлов слева создайте копию файла <code>example.md</code> в папке <code>src/students</code>, нажав на нём правой кнопкой мыши, и выбрав <code>Copy</code>, а затем нажав правой кнопкой на папке <code>students</code> и выбрав <code>Paste</code></figcaption>
+            <figcaption>В дереве файлов слева создайте копию файла <code>example.md</code> в папке <code>src/students</code>, нажав на нём правой кнопкой мыши, и выбрав <code>Copy</code>, а затем нажав правой кнопкой на папке <code>students</code> и выбрав <code>Paste</code></figcaption>
             <img src="../pictures/task/copy.png" width="450" alt="">
             <img src="../pictures/task/paste.png" width="450" alt="">
         </figure>
     </li>
     <li>
         <figure>
-            <figcaption>Переименуйте получившийся файл также как ветку, нажав на нём правой кнопкой мыши и выбрав <code>Rename</code></figcaption>
+            <figcaption>Переименуйте получившийся файл также как ветку, нажав на нём правой кнопкой мыши и выбрав <code>Rename</code>. В этом примере, так как ветка называлась словом <b>vorobyev</b>, мы ввели его и нажали <code>Enter</code></figcaption>
             <img src="../pictures/task/rename1.png" width="450" alt="">
             <img src="../pictures/task/rename2.png" width="300" alt="">
         </figure>
@@ -99,14 +122,14 @@
     </li>
     <li>
         <figure>
-            <figcaption>На вкладке слева <code>Source Control</code> наведите курсор на наш новый файл и нажмите на появившийся <code>+</code> справа. Введите в поле <code>Message</code> сверху сообщение для коммита и нажмите на галочку <code>✓</code></figcaption>
+            <figcaption>На вкладке слева <code class="code--orange">Source Control</code> наведите курсор на наш новый файл и нажмите на появившийся <code>+</code> справа. Введите в поле <b>Message</b> сверху сообщение для коммита и нажмите на галочку <code>✓</code></figcaption>
             <img src="../pictures/task/stage.png" width="450" alt="">
             <img src="../pictures/task/commit.png" width="450" alt="">
         </figure>
     </li>
     <li>
         <figure>
-            <figcaption>Нажмите на кнопку <code>Create pull request</code>(вторая после заголовка <code>Source Control</code>). В открывшейся вкладке пролистайте вниз и нажмите <code>Create</code>.</figcaption>
+            <figcaption>Нажмите на кнопку <code>Create pull request</code> (вторая после заголовка <code class="code--orange">Source Control</code>). В открывшейся вкладке пролистайте вниз и нажмите <code class="code--green">Create</code>.</figcaption>
             <img src="../pictures/task/pr1.png" width="600" alt=""><br>
             <img src="../pictures/task/pr2.png" width="250" alt="">
             <img src="../pictures/task/pr3.png" width="900" alt="">
