@@ -42,8 +42,16 @@
             width: 10em;
         }
         .winner {
-            width: 15em;
             height: 15em;
+            position: relative;
+            width: 15em;
+        }
+        .winner::before {
+            content: '👑';
+            position: absolute;
+            top: 0;
+            font-size: 3em;
+            transform: translateY(-60%);
         }
         button::after {
             content: attr(aria-label);

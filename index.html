@@ -40,6 +40,16 @@
         li::marker {
             color: var(--color-grey);
         }
+        .flex {
+            display: flex;
+            line-height: 1.4;
+        }
+        .ml-auto {
+            margin-left: auto;
+        }
+        .gap-1 {
+            gap: 1em;
+        }
     </style>
 </head>
 <body class="shower list">
@@ -59,7 +69,7 @@
             <li>Метрика</li>
             <li>Q&A</li>
         </ol>
-        <i>P.S. Котов считать не нужно</i>
+        <p class="note"><i>P.S. Котов считать не нужно</i></p>
         <img class="place right" src="pictures/cover.jpg" alt="Фотография Михаила Воробьева">
         <style>
             #cover h2 {
@@ -204,7 +214,7 @@
         <p><code>git push</code> — отправить коммиты (запушить)</p>
         <p><code>git pull</code> — подтянуть коммиты (спуллить)</p>
         <hr>
-        <p>Кроме клонирования, и операций push/pull чужой удаленный репозиторий на гитхабе можно <b>форкнуть</b> — создать в своём аккаунте такой же удаленный репозиторий, сохранив связь с оригиналом, но со своей независимой историей.</p>
+        <p>Кроме клонирования, и операций push/pull чужой удаленный репозиторий на гитхабе можно <b>форкнуть</b> — создать в своём аккаунте такой же удаленный репозиторий, сохранив связь с оригиналом, но со своей независимой историей.</p>
     </section>
 
     <section class="slide" id="definitions">
@@ -225,6 +235,9 @@
         <style>
             #definitions .two {
                 grid-template-columns: 2fr 1fr;
+            }
+            #definitions li {
+                min-height: 3em;
             }
         </style>
     </section>
@@ -263,13 +276,16 @@
             <li>Опубликовать тестовую версию сайта и проверить функциональность</li>
             <li>Создать <b>Pull Request</b> (запрос на слияние веток) и провести <b>Code Review</b> (проверку чужого кода перед слиянием)</li>
         </ul>
-        <a href="https://doka.guide/tools/ci-cd/" target="_blank">CI/CD</a> • <a href="https://docs.github.com/en/get-started/quickstart/github-flow" target="_blank">GitHub flow</a><br>
-        <a href="task/">Задание</a>
+        <p class="flex gap-1">
+            <a href="https://doka.guide/tools/ci-cd/" target="_blank">CI/CD</a>
+            <a href="https://docs.github.com/en/get-started/quickstart/github-flow" target="_blank">GitHub flow</a>
+            <a class="ml-auto" href="task/">Задание</a>
+        </p>
     </section>
 
     <section class="slide" id="metrika">
         <h2><a href="https://metrika.yandex.ru/" target="_blank">III. Метрика</a></h2>
-        <p>Инструмент для оценки посещаемости сайтов и анализа поведения пользователей.</p>
+        <p>Инструмент для оценки посещаемости сайтов и анализа поведения пользователей. Полезна в принятии решений.</p>
         <p>Можно проверять, добавив к адресу сайта <code>?_ym_debug=1</code> и заглянув в консоль браузера <code>F12</code>/<code>Cmd+Shift+I</code></p>
         <a href="cats/?_ym_debug=1" target="_blank">Котики</a> • <a href="https://metrika.yandex.ru/dashboard?id=89410210" target="_blank">Счётчик котиков</a>
     </section>
