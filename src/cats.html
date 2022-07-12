@@ -117,8 +117,9 @@
  <!-- /Yandex.Metrika counter -->
  <script>
      function handleClick(e) {
+         ym(89410210,'reachGoal', e.target.id);
+         ym(89410210,'reachGoal', 'vote');
          alert('Спасибо! Ваш голос учтен.');
-         ym(89410210,'reachGoal', e.target.id)
      }
 
      const btns = document.getElementsByTagName('button');
