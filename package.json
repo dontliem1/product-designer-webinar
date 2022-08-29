@@ -33,7 +33,7 @@
     "netlify-plugin-cache": "^1.0.3"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^1.0.1",
+    "@11ty/eleventy": "^1.0.2",
     "@shower/cli": "^0.3.1",
     "path-exists-cli": "^2.0.0"
   },

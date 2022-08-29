@@ -1,0 +1,14 @@
+{
+    "browser": true,
+    "curly": true,
+    "esversion": 6,
+    "eqeqeq": true,
+    "freeze": true,
+    "globals": {
+        "ym": false
+    },
+    "latedef": true,
+    "nocomma": true,
+    "noreturnawait": true,
+    "unused": "strict"
+}

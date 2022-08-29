@@ -80,24 +80,24 @@
 </header>
 <main>
 <ul>
-    {%- for student in collections.students -%}
-    {% unless student.fileSlug == 'example' %}
-    <li>
-        <button
-            aria-label="Проголосовать"
-            id="{{ student.fileSlug }}"
-            style="background-image: url('{{ student.data.img }}');"
-            type="button"
-            {% if student.fileSlug == '' %}class="winner"{% endif %}
-        ></button>
-        {{ student.templateContent }}
-    </li>
-    {% endunless %}
-    {%- endfor -%}
+{%- for student in collections[page.fileSlug] -%}
+{% unless student.fileSlug == 'example' %}
+<li>
+    <button
+        aria-label="Проголосовать"
+        id="{{ student.fileSlug }}"
+        style="background-image: url('{{ student.data.img }}');"
+        type="button"
+        {% if student.fileSlug == '' %}class="winner"{% endif %}
+    ></button>
+    {{ student.templateContent }}
+</li>
+{% endunless %}
+{%- endfor -%}
 </ul>
 </main>
 <footer>
-    <a href="../">Сайт воркшопа</a> •
+    <a href="../../">Сайт воркшопа</a> •
     <a href="https://metrika.yandex.ru/dashboard?id=89410210" target="_blank">Метрика ↗</a>
 </footer>
 <!-- Yandex.Metrika counter -->
@@ -117,7 +117,6 @@
  <!-- /Yandex.Metrika counter -->
  <script>
      function handleClick(e) {
-         ym(89410210,'reachGoal', e.target.id);
          ym(89410210,'reachGoal', 'vote');
          alert('Спасибо! Ваш голос учтен.');
      }
